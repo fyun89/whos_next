@@ -1,0 +1,109 @@
+<!--
+  ~ Copyright (c) 2018 Dematic, Corp.
+  ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+  -->
+
+<wuf-content-header>
+    <!-- insert header content here -->
+    <ng-container toolbarLeft>
+        <wuf-breadcrumb
+                [items]="[{ link: '/', label: 'Home' }, { link: null, label: 'Page 1', active: true }]"></wuf-breadcrumb>
+    </ng-container>
+
+    <ng-container toolbarRight>
+        <!-- insert page-level utilities here-->
+    </ng-container>
+</wuf-content-header>
+
+<wuf-content-main>
+    <!-- insert content here -->
+
+    <h1>Page 1</h1>
+
+    <p>Placeholder page.</p>
+
+    <hr>
+
+    <h3>Example Dark Theme Use</h3>
+
+    <mat-slide-toggle color="primary" [(checked)]="configService.config.themeDark"
+                      (change)="onDarkThemeChange($event.checked)">Dark Theme
+    </mat-slide-toggle>
+
+    <hr>
+
+    <h3>Example Angular Material Buttons</h3>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Basic Buttons</th>
+            <th>Raised Buttons</th>
+            <th>Icon Buttons</th>
+            <th>Fab Buttons</th>
+            <th>Mini Fab Buttons</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <button mat-button>Basic</button>
+            </td>
+            <td>
+                <button mat-raised-button>Basic</button>
+            </td>
+            <td>
+                <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+                </button>
+            </td>
+            <td>
+                <button mat-fab>Basic</button>
+            </td>
+            <td>
+                <button mat-mini-fab>Basic</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button mat-button color="primary">Primary</button>
+            </td>
+            <td>
+                <button mat-raised-button color="primary">Primary</button>
+            </td>
+            <td>
+                <button mat-icon-button color="primary">
+                    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+                </button>
+            </td>
+            <td>
+                <button mat-fab color="primary">Primary</button>
+            </td>
+            <td>
+                <button mat-mini-fab color="primary">Primary</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3>Example Native Web Component:</h3>
+
+    <wuf-code-sample
+            showCopyButton
+            type="html"
+            copy-label="Copy"
+            copy-label-error="Error"
+            copy-label-done="Done"
+            [code]="sampleCode"
+    >
+    </wuf-code-sample>
+
+</wuf-content-main>
+
+<wuf-content-footer>
+    <!-- insert footer content here -->
+    [page footer content here]
+</wuf-content-footer>
+

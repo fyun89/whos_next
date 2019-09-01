@@ -1,0 +1,42 @@
+<!--
+  ~ Copyright (c) 2018 Dematic, Corp.
+  ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+  -->
+
+<wuf-content-header>
+    <!-- insert header content here -->
+    <ng-container toolbarLeft>
+        <wuf-breadcrumb
+                [items]="[{ link: '/', label: 'Home' }, { link: null, label: 'Feature Module', active: true }]"></wuf-breadcrumb>
+    </ng-container>
+
+    <ng-container toolbarRight>
+        <!-- insert page-level utilities here-->
+    </ng-container>
+</wuf-content-header>
+
+<wuf-content-main>
+    <!-- insert content here -->
+
+    <h1>Lazy-Loaded Feature Module</h1>
+
+    <p>This feature module was loaded lazily.</p>
+
+    <p>This module represents a good example of how to build sub-modules within your app. "Sub-modules" or "feature
+        modules" are a design pattern that allows you to group similar functional areas together. By providing such
+        pages as a collection in a feature module, you will have the advantage of being able to load all related pages
+        together at the same time. Additionally, sub-modules can be "lazy loaded", which means they are not served with
+        the initial app bundle but, rather, on demand when the user hits a route served by the sub-module.</p>
+
+    <p>It is highly recommended that your app be divided in this way into sub-modules and not as top-level, individual
+        page components.</p>
+
+    <p>To take advantage of this design pattern for your app, delete example-page-1 and example-page-2 at src/app/pages/
+        and transform this sub-module (example-feature-module) as you see fit.</p>
+</wuf-content-main>
+
+<wuf-content-footer>
+    <!-- insert footer content here -->
+    [page footer content here]
+</wuf-content-footer>
+

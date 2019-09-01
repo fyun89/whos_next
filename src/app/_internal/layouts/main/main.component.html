@@ -1,0 +1,61 @@
+<!--
+  ~ Copyright (c) 2018 Dematic, Corp.
+  ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+  -->
+
+<wuf-view-main [logoRoute]="logoRoute">
+    <ng-container sidebarNavigation>
+        <wuf-navigation
+            [data]="navData"
+            [position]="configService.config.navigation.position"
+            [iconPosition]="configService.config.navigation.iconPosition"
+            [alignment]="configService.config.navigation.alignment"
+        ></wuf-navigation>
+    </ng-container>
+
+    <ng-container sidebarFooter>
+        <!--<wuf-sidebar-footer [dataUrl]="footerDataUrl"></wuf-sidebar-footer>-->
+        <wuf-sidebar-footer [copyrightName]="configService.config.copyrightName"></wuf-sidebar-footer>
+    </ng-container>
+
+    <ng-container toolbarLeft>
+        <!--Optionally add app-level title here-->
+        {{'FRAME.APP_NAME' | translate}}
+    </ng-container>
+
+    <ng-container toolbarRight>
+        <!--Add app-level utilities here-->
+        <div class="util-wrap">
+            <i class="material-icons"
+               [matTooltip]="'FRAME.UTILITIES.ACCOUNT' | translate"
+               matTooltipPosition="below"
+            >account_circle</i>
+            <i class="material-icons"
+               [matTooltip]="'FRAME.UTILITIES.SETTINGS' | translate"
+               matTooltipPosition="below"
+               (click)="openDrawer()"
+            >settings</i>
+        </div>
+    </ng-container>
+
+    <ng-container main>
+        <router-outlet></router-outlet>
+    </ng-container>
+</wuf-view-main>
+
+
+<!-- begin settings side drawer -->
+<wuf-drawer [header]="drawerHeader" id="settingsDrawer">
+    <mat-form-field>
+        <mat-select [placeholder]="'FRAME.SETTINGS.LANGUAGE.LABEL' | translate" [(value)]="currentLanguage" (selectionChange)="onLanguageSelectionChange($event)">
+            <mat-option *ngFor="let lang of languages" [value]="lang">
+                {{ lang.label }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-slide-toggle color="primary" [(checked)]="configService.config.themeDark"
+                      (change)="onDarkThemeChange($event.checked)">{{ darkThemeLabel }}
+    </mat-slide-toggle>
+</wuf-drawer>
+<!-- end settings side drawer -->

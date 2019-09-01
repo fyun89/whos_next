@@ -1,0 +1,18 @@
+/*!
+ * Copyright (c) 2018 Dematic, Corp.
+ * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+ */
+
+mat-card {
+  width: 300px;
+  margin: 0 auto;
+  height: auto;
+  max-height: 300px;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.full-height {
+  height: 100%;
+}

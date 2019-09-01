@@ -1,0 +1,32 @@
+{
+    "FRAME": {
+        "BREADCRUMB": "Home",
+        "APP_NAME": "WUF Quick Start",
+        "SETTINGS": {
+            "TITLE": "Settings",
+            "LANGUAGE": {
+                "LABEL": "Language",
+                "LANGUAGES": {
+                    "ENGLISH": "English (en)",
+                    "CHINESE": "Chinese (zh)"
+                }
+            },
+            "DARKTHEME": {
+                "LABEL": "Dark Theme"
+            }
+        },
+        "UTILITIES": {
+            "ACCOUNT": "Account",
+            "SETTINGS": "Settings"
+        },
+        "NAVIGATION": {
+            "PAGE1": "Page 1",
+            "PAGE2": "Page 2",
+            "FEATUREMODULE": {
+                "MAIN": "Sub Module",
+                "PAGE1": "Child Page 1",
+                "PAGE2": "Child Page 2"
+            }
+        }
+    }
+}

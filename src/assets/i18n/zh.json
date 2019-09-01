@@ -1,0 +1,32 @@
+{
+    "FRAME": {
+        "BREADCRUMB": "家",
+        "APP_NAME": "车队的管理",
+        "SETTINGS": {
+            "TITLE": "设置",
+            "LANGUAGE": {
+                "LABEL": "语言",
+                "LANGUAGES": {
+                    "ENGLISH": "英语 (en)",
+                    "CHINESE": "中文 (zh)"
+                }
+            },
+            "DARKTHEME": {
+                "LABEL": "黑暗主题"
+            }
+        },
+        "UTILITIES": {
+            "ACCOUNT": "帐户",
+            "SETTINGS": "设置"
+        },
+        "NAVIGATION": {
+            "PAGE1": "第1页",
+            "PAGE2": "第2页",
+            "FEATUREMODULE": {
+                "MAIN": "儿童模块",
+                "PAGE1": "儿童第1页",
+                "PAGE2": "儿童第2页"
+            }
+        }
+    }
+}

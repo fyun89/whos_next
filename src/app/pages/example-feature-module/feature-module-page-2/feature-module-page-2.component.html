@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright (c) 2018 Dematic, Corp.
+  ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+  -->
+
+<wuf-content-header>
+    <!-- insert header content here -->
+    <ng-container toolbarLeft>
+        <wuf-breadcrumb
+                [items]="[{ link: '/', label: 'Home' }, { link: '/example-feature-module', label: 'Feature Module' }, { link: null, label: 'Page 2', active: true }]"></wuf-breadcrumb>
+    </ng-container>
+
+    <ng-container toolbarRight>
+        <!-- insert page-level utilities here-->
+    </ng-container>
+</wuf-content-header>
+
+<wuf-content-main>
+    <!-- insert content here -->
+
+    <h1>Lazy-Loaded Feature Module - Child Page 2</h1>
+
+    <p>Placeholder page.</p>
+</wuf-content-main>
+
+<wuf-content-footer>
+    <!-- insert footer content here -->
+    [page footer content here]
+</wuf-content-footer>
+

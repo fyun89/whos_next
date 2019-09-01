@@ -1,0 +1,20 @@
+/*!
+ * Copyright (c) 2018 Dematic, Corp.
+ * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+ */
+
+.util-wrap {
+	height: var(--wuf-header-height);
+	position: relative;
+	display: inline-block;
+	padding: 18px 0 0 18px;
+	.material-icons {
+		cursor: default;
+	}
+}
+
+wuf-drawer {
+	.mat-form-field {
+		width: 100%;
+	}
+}

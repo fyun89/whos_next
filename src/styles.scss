@@ -1,0 +1,34 @@
+/*!
+ * Copyright (c) 2018 Dematic, Corp.
+ * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
+ */
+
+/* You can add global styles to this file, and also import other style files */
+/* Styles placed here will override those from any component */
+
+/* Leave these imports alone */
+@import "assets/styles/scss/base"; // Import base SCSS dependencies for the app
+
+/* Add any additional global app styles below this line */
+
+:root {
+
+    /***** logo *****/
+    @include wuf-theme-logo('/assets/images/logo.svg', 200px, 35px);
+
+    /***** typography *****/
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+    $wuf-brand-body-color: $body-color;
+    $wuf-brand-font-family-sans-serif: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    $wuf-brand-font-family-serif: 'Roboto Slab', Times, serif;
+    $wuf-brand-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    $wuf-brand-font-family-base: $wuf-brand-font-family-sans-serif;
+
+    @include wuf-theme-typography(
+        $wuf-brand-body-color,
+        $wuf-brand-font-family-sans-serif,
+        $wuf-brand-font-family-serif,
+        $wuf-brand-font-family-monospace,
+        $wuf-brand-font-family-base
+    );
+}
