@@ -54,7 +54,7 @@
     "@anviltech/wuf-web-message": "^2.0.0-rc.1",
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "bunyan": "^1.8.12",
     "bunyan-debug-stream": "^2.0.0",
