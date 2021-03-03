@@ -67,7 +67,7 @@
     "intl": "^1.2.5",
     "material-components-web": "0.44.0",
     "material-design-icons": "3.0.1",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "require-all": "^3.0.0",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.0.0-rc.0",
